@@ -1,5 +1,7 @@
 // the Model file for User
 const mongoose = require("../db/connection")
+const Schema = mongoose.Schema
+
 
 const User = new mongoose.Schema({
     name: String,
