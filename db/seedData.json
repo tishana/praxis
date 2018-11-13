@@ -1,0 +1,26 @@
+[
+    {
+        "name": "Tishana",
+        "password": "password1"
+    },
+    {
+        "name": "Arin",
+        "password": "password2"
+    },
+    {
+        "name": "Sean",
+        "password": "password3"
+    },
+    {
+        "title": "Drink more water",
+        "description": "drink 8 cups of water each day for a week",
+        "dateStarted": "11/30/2018",
+        "dateGoal": "12/06/2018"
+    },
+    {
+        "title": "Increase stamina",
+        "description": "workout 3 times a week for a month",
+        "dateStarted": "11/24/2018",
+        "dateGoal": "12/06/2018"
+    }
+]
