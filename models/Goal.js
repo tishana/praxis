@@ -11,10 +11,10 @@ const Goal = new mongoose.Schema({
     },
     dateGoal: Date, // the date a Goal should be completed, set by User
     count: Number, // number of Habits... eh, I think.
-    owner: { //the User that created the Goal
-        type: Schema.Types.ObjectId,
-        ref: 'User'
-    },
+    // owner: { //the User that created the Goal
+    //     type: Schema.Types.ObjectId,
+    //     ref: 'User'
+    // },
     habits: [// the Habits for a Goal
         {
             type: Schema.Types.ObjectId,
