@@ -3,7 +3,7 @@ const router = express.Router()
 const Users = require('../models/User')
 
 router.get('/', (req, res) => {//homepage
-    res.render(index, { page: 'homepage' })
+    res.render('../views/index', { page: 'homepage' })
 })
 // router.use('/user')
 
