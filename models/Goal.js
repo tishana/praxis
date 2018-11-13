@@ -10,7 +10,6 @@ const Goal = new mongoose.Schema({
         default: Date.now
     },
     dateGoal: Date, // the date a Goal should be completed, set by User
-    count: Number, // number of Habits... eh, I think.
     // owner: { //the User that created the Goal
     //     type: Schema.Types.ObjectId,
     //     ref: 'User'
@@ -20,7 +19,8 @@ const Goal = new mongoose.Schema({
             type: Schema.Types.ObjectId,
             ref: 'Habit'
         }
-    ]
+    ],
+    count: Number//this.habits.length,  number of Habits... eh, I think.
 })
 
 

@@ -1,6 +1,12 @@
+const Goal = require('../models/Goal')
+// const Habit = require('../models/Habit')
 module.exports = {
-    index: (req, res) => {
-        res.render('../views/index', { page: 'homepage' })
+    show: (req, res) => {//show one goal
+        Goal.findOne({ _id: req.params.id }).then(goal => {
+            res.render('goal/show', {//show found goal on show layout
+                goal
+            })
+        })
     }
     // new: (req, res) => { },
     // create: (req, res) => { },

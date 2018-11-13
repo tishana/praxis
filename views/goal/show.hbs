@@ -1,0 +1,12 @@
+<h2>{{ title }} </h2>
+<p> {{ description }} </p>
+<p> {{ dateGoal }} </p>
+{{#if habits}}
+<ul>
+    {{!-- need to add link to show one goal to the title --}}
+    {{#each habits}}
+    <p>{{ title }} </p>
+    {{/each}}
+
+</ul>
+{{/if}}

@@ -8,6 +8,7 @@ const app = express()
 app.set('view engine', 'hbs')
 app.use(express.static('public'))
 
+
 //sending the requests to the route files
 app.use(require('./routes/indexRoutes'))
 //Body-Parser

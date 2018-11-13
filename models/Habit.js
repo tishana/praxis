@@ -1,5 +1,6 @@
 // the Model file for Habit
 const mongoose = require("../db/connection")
+const Schema = mongoose.Schema
 
 const Habit = new mongoose.Schema({
     title: String,

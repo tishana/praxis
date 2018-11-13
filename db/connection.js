@@ -2,4 +2,5 @@
 const mongoose = require('mongoose')
 mongoose.connect('mongodb://localhost/praxis', { useNewUrlParser: true })//my database... added { useNewUrlParser: true } after deprecation warning
 mongoose.Promise = Promise
+mongoose.set("debug", true);
 module.exports = mongoose

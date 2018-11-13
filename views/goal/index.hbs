@@ -1,0 +1,13 @@
+{{ log. }}
+{{!-- why this line? --}}
+{{#if goals}}
+<ul>
+    {{!-- need to add link to show one goal to the title --}}
+    {{#each goals}}
+    <a href='/goal/{{id}}'>{{ title }} </a>
+
+    <p> {{ dateGoal }} </p>
+    {{/each}}
+
+</ul>
+{{/if}}
