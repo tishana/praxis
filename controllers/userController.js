@@ -1,6 +1,8 @@
 module.exports = {
-    index: (req, res) => { },
-    new: (req, res) => { },
-    create: (req, res) => { }
+    index: (req, res) => {
+        res.render('../views/index', { page: 'homepage' })
+    }
+    // new: (req, res) => { },
+    // create: (req, res) => { }
 
 }
