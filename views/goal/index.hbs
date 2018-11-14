@@ -4,10 +4,11 @@
 <ul>
     {{!-- need to add link to show one goal to the title --}}
     {{#each goals}}
-    <a href='/goal/{{id}}'>{{ title }} </a>
+    <a href='/goal/{{_id}}'>{{ title }} </a>
 
     <p> {{ dateGoal }} </p>
     {{/each}}
 
 </ul>
 {{/if}}
+<a href='/goal/new'>Add a New Goal</a>
