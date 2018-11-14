@@ -1,8 +1,13 @@
 <div>
-    <h4>Set a New Goal!</h4>
-    <form>
-        <p>Title:</p><br>
-        <p><textarea type='text' name='title' cols='30'></p><br>
-        <p><textarea type='text' name='description' cols='30' rows='2'></p><br>
+    <h3>Set a New Goal!</h3>
+    <form action='/goal/' method="POST">
+        <label>Title:</label>
+        <p><textarea type='text' name="title" cols='40' rows='2' value={{this.title}}></textarea></p>
+        <label>Goal Date:</label>
+        <p><textarea type='date' name='dateGoal' cols='40' rows='2' value={{this.dateGoal}}></textarea></p>
+        <label>Description:</label>
+        <p><textarea type='text' name='description' cols='40' rows='3' value={{this.description}}></textarea></p>
+        <p><input type="submit" value='Set it!'></p>
     </form>
+
 </div>
