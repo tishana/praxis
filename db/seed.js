@@ -1,8 +1,8 @@
 // the setup for the seed data for this project
-const mongoose = require("./connection")
+// const mongoose = require("./connection")
 const seeds = require("./seedData.json")
 const Goal = require("../models/Goal");
-mongoose.Promise = Promise;
+// mongoose.Promise = Promise;
 // const { Habit } = require("../models/Habit");
 
 Goal.remove({})
