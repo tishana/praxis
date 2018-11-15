@@ -1,31 +1,31 @@
 [
     {
         "title": "Get enough rest",
-        "description": "go to bed at 10pm each night for a week",
+        "description": "Go to bed at 10pm each night for a week",
         "dateStarted": "11/15/2018",
         "dateGoal": "12/22/2018"
     },
     {
         "title": "Be proactive about homework",
-        "description": "finish hw before 8pm every night for a week",
+        "description": "Finish hw before 8pm every night for a week",
         "dateStarted": "12/1/2018",
         "dateGoal": "12/8/2018"
     },
     {
         "title": "Drink more water",
-        "description": "drink 8 cups of water each day for a week",
+        "description": "Drink 8 cups of water each day for a week",
         "dateStarted": "11/10/2018",
         "dateGoal": "11/16/2018"
     },
     {
         "title": "Increase stamina",
-        "description": "workout 3 times a week for a month",
+        "description": "Workout 3 times a week for a month",
         "dateStarted": "11/24/2018",
         "dateGoal": "12/06/2018"
     },
     {
         "title": "Type Faster",
-        "description": "finish 4 typing tutorials",
+        "description": "Finish 4 typing tutorials",
         "dateStarted": "11/30/2018",
         "dateGoal": "12/06/2018"
     }

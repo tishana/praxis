@@ -1,4 +1,4 @@
-// the Model file for User
+// the Model file for User to be added later
 const mongoose = require("../db/connection")
 const Schema = mongoose.Schema
 

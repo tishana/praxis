@@ -18,6 +18,11 @@ app.use(cors())
 //sending the requests to the route files MUST go after all other invocations
 app.use(require('./routes/indexRoutes'))
 
-app.listen(4000, () => {
-    console.log('Alexa can hear you on port 4000')
+// app.listen(4000, () => {
+//     console.log('Alexa can hear you on port 4000')
+// })
+app.set('port', process.env.PORT || 3001)
+
+app.listen(app.get('port'), () => {
+    console.log(`✅ PORT: ${app.get('port')} 🌟`)
 })
