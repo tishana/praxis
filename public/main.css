@@ -1,4 +1,21 @@
-html{
-    background-color: #004e64;
+body{
+    background-color: #407087;
     color: white;
+    font-family:Arial, Helvetica, sans-serif;
+}
+.header{
+    font-size: 26px;
+    /* background-color: #294856; */
+}
+.a {
+    color: #fff;
+    text-decoration: none;
+    font-size:20px;
+}
+
+.p {
+    color: #949897;
+}
+.footer{
+    /* background-color: #294856; */
 }

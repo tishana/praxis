@@ -1,14 +1,15 @@
 {{ log. }}
 {{!-- why this line? --}}
+<h3>Your Goal List: </h3>
+<a class="a" href='/goal/new'>+New Goal</a>
 {{#if goals}}
 <ul>
     {{!-- need to add link to show one goal to the title --}}
     {{#each goals}}
-    <a href='/goal/{{_id}}'>{{ title }} {{ this.goal.habits.length }}</a>
+    <a class="a" href='/goal/{{_id}}'>{{ title }}</a>
 
-    <p> Goal Date: {{ dateGoal }} </p>
+    <p class='p'> Goal Date: {{ dateGoal }} </p>
     {{/each}}
 
 </ul>
 {{/if}}
-<a href='/goal/new'>Add a New Goal</a>
