@@ -1,4 +1,7 @@
 <h2>{{ title }} </h2>
+<form action="/goal/{{id}}?_method=delete" method=POST>
+    <input type="submit" value='Delete'>
+</form>
 <p> {{ description }} </p>
 <p> {{ dateGoal }} </p>
 {{#if habits}}
@@ -16,11 +19,3 @@
     <p><input type="text" name="habit"></p><input type="submit" value='Add Habit!'>
 </form><br><br>
 <a href='/'>Back to Goals List</a>
-
-{{!-- Adding a new Habit to Goal
-1. User types in new Habit, clicks "Add Habit!"
-2. Habit is created
-3. Habit is puhsed to Goal.habits[]
-4. Browser redirects to /goal/show
-5. Habit shows with checkbox
---}}

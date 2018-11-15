@@ -4,7 +4,7 @@
 <ul>
     {{!-- need to add link to show one goal to the title --}}
     {{#each goals}}
-    <a href='/goal/{{_id}}'>{{ title }} </a>
+    <a href='/goal/{{_id}}'>{{ title }} {{ this.goal.habits.length }}</a>
 
     <p> {{ dateGoal }} </p>
     {{/each}}

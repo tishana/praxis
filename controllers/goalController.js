@@ -55,7 +55,16 @@ module.exports = {
 
 
 
-        // delete: (req, res) => { },
+
         // show: (req, res) => { }
-    }
+    },
+    delete: (req, res) => { //deleting a Goal
+        Goal.findOneAndRemove({ _id: req.params.id })
+            .then(() => {
+                res.redirect('/')
+            })
+            .catch(err => {
+                console.log(err)
+            })
+    },
 }
