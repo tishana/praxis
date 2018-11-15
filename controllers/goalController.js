@@ -7,9 +7,9 @@ module.exports = {
             .then(goal => {
                 res.render('goal/show', goal)
             })
-            .catch(err => {
-                console.log('error', err)
-            })
+        // .catch(err => {
+        //     console.log('error', err)
+        // })
     },
     new: (req, res) => {//form for a new Goal
         res.render('goal/new')
@@ -21,15 +21,23 @@ module.exports = {
             dateGoal: req.body.dateGoal
         }).then(goal => {
             res.redirect(`goal/${goal._id}`)
-        })
-    }//,
-    // update: (req, res) => {//adding a new habit
-    //     Goal.findById(req.params.id).then(goal => {
-    //         res.render('goal/update', goal)
-    //     })
-    // }
-}
+        })//.catch(err => {
+        //     console.log('error', err)
+        // })
 
+    },
+    update: (req, res) => {
+        Goal.findById(req.params.id).then(goal => {
+            res.render('goal/habit', goal)
+        })
+        //         Adding a new Habit to Goal
+        // 1. User types in new Habit, clicks "Add Habit!"
+        // 2. Habit is created
+        // 3. Habit is pused to Goal.habits[]
+        // 4. Browser redirects to /goal/show
+        // 5. Habit shows with checkbox
+    }
+}
 
     // delete: (req, res) => { },
     // show: (req, res) => { }
