@@ -3,7 +3,7 @@ This is project 2, a fullstack CRUD app, as a student in the Web Development Imm
 
 --------------------------------------------
 
-##Application Function:
+## Application Function:
 
 Praxis, your personal habit tracker.
 
@@ -30,7 +30,7 @@ Here are a few screenshots of Praxis:
 
 --------------------------------------------
 
-##User Stories
+## User Stories
 
 * I can set a goal (Create Goal).
 * I can view a list of goals (Read Goal).
@@ -41,7 +41,7 @@ Here are a few screenshots of Praxis:
 
 --------------------------------------------
 
-##Technologies Used for Praxis:
+## Technologies Used for Praxis:
 
 * HTML5
 * CSS3
@@ -55,7 +55,7 @@ Here are a few screenshots of Praxis:
 --------------------------------------------
 
 
-##How to Install Praxis locally:
+## How to Install Praxis locally:
 
 * Fork and clone this repository to your machine
 * Change into the new directory
@@ -88,7 +88,7 @@ You're all set to run Praxis on your machine. You will see goals on the main pag
 
 --------------------------------------------
 
-##Future Plans for Praxis 2.0:
+## Future Plans for Praxis 2.0:
 
 During this project, I realized there was so much more I wanted to do.
 
