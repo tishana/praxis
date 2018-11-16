@@ -2,8 +2,8 @@
 <form action="/goal/{{id}}?_method=delete" method=POST>
     <input type="submit" value='Delete'>
 </form>
-<p> {{ description }} </p>
-<p> {{ dateGoal }} </p>
+<p> Description: {{ description }} </p>
+<p> Goal Date: {{ dateGoal }} </p>
 {{#if habits}}
 <ul>
     {{!-- need to add link to show one goal to the title --}}
