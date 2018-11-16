@@ -100,10 +100,3 @@ Another improvement is being able to edit the goal title, description, and goal 
 
 
 
---------------------------------------------
-
-Acknowledgements:
-
-
-
-
