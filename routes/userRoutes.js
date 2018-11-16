@@ -1,8 +1,8 @@
 // Routes for User to be added later
-const express = require('express')
-const router = express.Router()
-const userController = require('../controllers/userController')
+// const express = require('express')
+// const router = express.Router()
+// const userController = require('../controllers/userController')
 
-router.get('/', userController.index)
+// router.get('/', userController.index)
 
-module.exports = router
+// module.exports = router
