@@ -16,7 +16,11 @@ I am a firm believer in goal setting as a way to be able to get the most out of 
 
 Now, you can do the same with Praxis. You can set new goals, and for each goal set a goal date, and create smaller habits for each goal. When you are done with the goal, you can delete it.
 
-You can see Praxis in action here: [`https://www.youtube.com/watch?v=vTAsKKdx4vA`].
+You can see Praxis in action here: 
+<a href="http://www.youtube.com/watch?feature=player_embedded&v=vTAsKKdx4vA
+" target="_blank"><img src="http://img.youtube.com/vi/vTAsKKdx4vA/0.jpg" 
+alt="Video of Praxis Habit Tracker" width="240" height="180" border="10" /></a>
+
 
 Here are a few screenshots of Praxis:
 1. Main page, a list of goals
