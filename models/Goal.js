@@ -18,17 +18,9 @@ const Goal = new mongoose.Schema({
         default: Date.now
     },
     dateGoal: Date, // the date a Goal should be completed, set by User
-    // owner: { //the User that created the Goal
-    //     type: Schema.Types.ObjectId,
-    //     ref: 'User'
-    // },
+
     habits: [Habit],
-    // habits: //[// the Habits for a Goal
-    // {
-    //     type: Schema.Types.ObjectId,
-    //     ref: 'Habit'
-    // },
-    //],
+
     count: Number//the number of habits will be incremented when a new Habit is added
 })
 
