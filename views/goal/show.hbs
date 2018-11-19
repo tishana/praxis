@@ -1,9 +1,10 @@
 <h2>{{ title }} </h2>
+
+<h4> {{ description }} </h4>
+<p class="p"> Goal Date: {{ dateGoal }} </p>
 <form action="/goal/{{id}}?_method=delete" method=POST>
-    <input type="submit" value='Delete'>
+    <input type="submit" value='Delete' class="button">
 </form>
-<p> Description: {{ description }} </p>
-<p> Goal Date: {{ dateGoal }} </p>
 {{#if habits}}
 <ul>
     {{!-- need to add link to show one goal to the title --}}
@@ -14,8 +15,10 @@
     {{/each}}
 
 </ul>
+{{else}}
+<p>You have no habits yet. Add one below!</p>
 {{/if}}
 <form action="/goal/{{id}}?_method=put" method="POST">
-    <p><input type="text" name="habit" placeholder="Add new habit..."></p><input type="submit" value='Add it!'>
+    <p><input type="text" name="habit" placeholder="Add new habit..."></p><input type="submit" class="button" value='Add it!'>
 </form><br><br>
 <a class="a" href='/'>Back to Goals List</a>
