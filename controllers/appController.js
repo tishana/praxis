@@ -1,4 +1,5 @@
 const { Goal, Habit } = require('../models/Goal')// module.exports = {
+// this is dead code you can drop this
 //     index: (req, res) => {
 //         res.render('../views/index', { page: 'homepage' })
 //     }
@@ -12,6 +13,9 @@ module.exports = {
                 })
             })
     }
+
+
+
 
 
     // new: (req, res) => { },

@@ -10,6 +10,12 @@ const Habit = new mongoose.Schema({
         ref: 'Goal'
     }
 })
+
+// a lot of comments here
+// comments read better at the top of a code block
+// well written should be self-explanatory, you will probably see this in time
+// and then realize you can write less comments
+
 const Goal = new mongoose.Schema({
     title: String, //title of the Goal
     description: String, //description of the Goal

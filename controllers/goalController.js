@@ -2,11 +2,13 @@ const { Goal, Habit } = require('../models/Goal')
 const mongoose = require('mongoose')
 module.exports = {
     show: (req, res) => {//show one Goal
+        // you can drop this console.log
         // console.log(`id ${req.params.id}`)
         Goal.findById(req.params.id)
             .then(goal => {
                 res.render('goal/show', goal)
             })
+            //catches are good to have
         // .catch(err => {
         //     console.log('error', err)
         // })
