@@ -3,5 +3,6 @@ const router = express.Router()
 const appController = require('../controllers/appController')
 
 router.get('/', appController.index)
+// router.get('/about')
 
 module.exports = router

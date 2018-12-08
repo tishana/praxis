@@ -2,14 +2,13 @@ const { Goal, Habit } = require('../models/Goal')
 const mongoose = require('mongoose')
 module.exports = {
     show: (req, res) => {//show one Goal
-        // console.log(`id ${req.params.id}`)
         Goal.findById(req.params.id)
             .then(goal => {
                 res.render('goal/show', goal)
             })
-        // .catch(err => {
-        //     console.log('error', err)
-        // })
+            .catch(err => {
+                console.log('error', err)
+            })
     },
     new: (req, res) => {//form for a new Goal
         res.render('goal/new')
@@ -21,9 +20,9 @@ module.exports = {
             dateGoal: req.body.dateGoal
         }).then(goal => {
             res.redirect(`goal/${goal._id}`)
-        })//.catch(err => {
-        //     console.log('error', err)
-        // })
+        }).catch(err => {
+            console.log('error', err)
+        })
 
     },
     update: (req, res) => {//adding new Habit to Goal
@@ -44,19 +43,6 @@ module.exports = {
                 console.log(err)
             })
 
-
-
-        //         Adding a new Habit to Goal
-        // 1. User types in new Habit, clicks "Add Habit!"
-        // 2. Habit is created
-        // 3. Habit is pushed to Goal.habits[]
-        // 4. Browser redirects to /goal/show
-        // 5. Habit shows with checkbox
-
-
-
-
-        // show: (req, res) => { }
     },
     delete: (req, res) => { //deleting a Goal
         Goal.findOneAndRemove({ _id: req.params.id })
