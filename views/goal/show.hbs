@@ -1,6 +1,6 @@
 <h3>{{ title }} </h3>
 
-<h4> goal: {{ description }} </h4>
+<h4> goal description: {{ description }} </h4>
 <p class="ptime"> goal date: {{ dateGoal }} </p>
 <form action="/goal/{{id}}?_method=delete" method=POST>
     <input type="submit" value='delete' class="button">
@@ -22,4 +22,4 @@
     <p><input class="inputField" type="text" name="habit" placeholder="add new habit..."></p><input type="submit" class="button"
         value='add it!'>
 </form><br><br>
-<a class="a" href='/'>back to goals</a>
+{{!-- <a class="a" href='/'>back to goals</a> --}}
