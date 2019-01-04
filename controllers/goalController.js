@@ -18,7 +18,7 @@ module.exports = {
         Goal.create({
             title: req.body.title,
             description: req.body.description,
-            dateGoal: req.body.dateGoal
+            dateGoal: req.body.dateGoal //need to add default date with ternary operator
         }).then(goal => {
             res.redirect(`goal/${goal._id}`)
         })//.catch(err => {
