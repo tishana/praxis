@@ -15,9 +15,9 @@ const Goal = new mongoose.Schema({
     description: String, //description of the Goal
     dateStarted: { // date the Goal was set, default to today.
         type: Date,
-        default: Date.now
+        default: new Date()
     },
-    dateGoal: Date, // the date a Goal should be completed, set by User
+    dateGoal: String, // the date a Goal should be completed, set by User
 
     habits: [Habit],
 
