@@ -11,38 +11,58 @@ body{
     border-radius: 10px;
 }
 .header{
-    font-size: 25px;
+    font-size: 2rem;
     background: #50898c;
     color: white;
     display: flex;
     justify-content: left;
     align-items:center;
-    padding: 0 20px;
+    padding: 0 10px;
     flex-wrap: wrap;
     
   }
-  nav a {
-    color: white;
-    display: inline;
-    padding: 20px;
-    font-size: 0.8em;
-    text-decoration: none;
+
+.habits{
+    margin: 15px; 
   }
 
-.a, .h3 {
-    color: #fff;
-    text-decoration: none;
-    font-size:20px;
+.fresh{
+    color: rgb(225, 248, 196);
 }
-.ptitles{
-    
+nav a {
+    color: white;
+    display: inline;
+    padding-left: 15px;
+    font-size: 0.8em;
+    text-decoration: none;
+}
+
+.a, .h3 {
+    color: rgb(245, 211, 125);
+    text-decoration: none;
+}
+
+.goals{
+    font-size: 1.6rem;
+}
+.goal{
+    font-size: 1.8rem;
+}
+.desc{
+    font-size: 1.2rem;
+    color: rgb(248, 232, 191);
+}
+.newHabit{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
 }
 
 .ptime {
     color: #b9bbba;
 }
-.button{
-    background-color: #fff; /* Green */
+/* .button{
+    background-color: #fff; 
     border: none;
     border-radius: 10px;
     color: rgb(46, 44, 44);
@@ -51,12 +71,13 @@ body{
     text-decoration: none;
     display: inline-block;
     font-size: 12px; 
-}
+} */
 
 main{
     padding: 10px 20px;
 }
 html{
     background-color: rgb(124, 139, 139);
-
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
 }

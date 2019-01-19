@@ -1,12 +1,11 @@
 {{ log. }}
-{{!-- why this line? --}}
 <h3>Your Goal List: </h3>
 
 {{#if goals}}
 <ul>
-    {{!-- need to add link to show one goal to the title --}}
+    {{!-- for each goal --}}
     {{#each goals}}
-    <a class="a" href='/goal/{{_id}}'>{{ title }}</a>
+    <a class="a goals" href='/goal/{{_id}}'>{{ title }}</a>
     <p class='p'> Goal Date: {{ dateGoal }} </p>
     {{/each}}
 
@@ -15,4 +14,4 @@
 <p>You have no goals yet. Go ahead... Add one!</p>
 {{/if}}
 {{!-- <input type="submit" class="button" value='+ New Goal'> --}}
-<button class="button"><a href='/goal/new'>+New Goal</a></button>
+<button class="button is-primary"><a href='/goal/new'>+New Goal</a></button>

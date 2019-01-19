@@ -28,5 +28,11 @@
         "description": "Finish 4 typing tutorials",
         "dateStarted": "11/30/2018",
         "dateGoal": "12/06/2018"
+    },
+    {
+        "title": "Fix dates",
+        "description": "Make the dates look better...",
+        "dateStarted": "12/30/2018",
+        "dateGoal": "1/16/2019"
     }
 ]
