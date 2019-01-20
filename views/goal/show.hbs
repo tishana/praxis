@@ -1,7 +1,4 @@
-<h3 class="goal">{{ title }} <form action="/goal/{{id}}?_method=delete" method=POST>
-        <input type="submit" value='x' class="button is-danger is-small">
-    </form>
-</h3>
+<h3 class="goal">{{ title }} </h3>
 
 
 
@@ -25,6 +22,8 @@
 <form action="/goal/{{id}}?_method=put" method="POST" class="newHabit">
     <input class="inputField" type="text" name="habit" placeholder="add new habit..."><input type="submit" class="button is-success"
         value='+'>
-</form><br>
-
+</form>
+<form action="/goal/{{id}}?_method=delete" method=POST>
+    <input type="submit" value='x' class="button is-danger is-small">
+</form>
 {{!-- <a class="a" href='/'>back to goals</a> --}}
