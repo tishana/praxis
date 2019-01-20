@@ -21,7 +21,10 @@ body{
     flex-wrap: wrap;
     
   }
-
+.logo{
+    margin: 0 40px;
+    font-size: 2.4rem;
+}
 .habits{
     margin: 15px; 
   }
@@ -61,13 +64,10 @@ nav a {
 .ptime {
     color: #b9bbba;
 }
-/* .button{
-    
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 12px; 
-} */
+.newGoal{
+    color: white;
+    font-size: 12px;
+}
 
 main{
     padding: 10px 20px;
