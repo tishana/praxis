@@ -1,14 +1,26 @@
+@media screen and (min-width: 768px) {
+    .input{
+        width: 400px;
+    }
+    .box{
+        width: 400px;
+    }
+  }
 body{
-    /* background-color: #50898c; */
     color: white;
     font-family: Arial, Helvetica, sans-serif;
 }
 .inputField {
+    border-radius: 10px;
+}
+.clean{
+    border-radius: 10px 0 0 10px;
+}
+.clean, .inputField{
     width: 25%;
     padding: 12px 20px;
     margin: 8px 0;
     box-sizing: border-box;
-    border-radius: 10px;
 }
 .header{
     font-size: 2rem;
@@ -68,7 +80,18 @@ nav a {
     color: white;
     font-size: 12px;
 }
-
+.oneGoal, .allGoals{
+    margin: 25px 50px;
+}
+.allGoals{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.box{
+    background-color: rgb(175, 177, 177);
+    padding: 20px 20px;
+}
 main{
     padding: 10px 20px;
 }
