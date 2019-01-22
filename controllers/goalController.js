@@ -17,7 +17,7 @@ module.exports = {
         Goal.create({
             title: req.body.title,
             description: req.body.description,
-            dateGoal: req.body.dateGoal
+            dateGoal: req.body.dateGoal //need to add default date with ternary operator
         }).then(goal => {
             res.redirect(`goal/${goal._id}`)
         }).catch(err => {
@@ -42,7 +42,6 @@ module.exports = {
             .catch(err => {
                 console.log(err)
             })
-
     },
     delete: (req, res) => { //deleting a Goal
         Goal.findOneAndRemove({ _id: req.params.id })
