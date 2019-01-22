@@ -1,38 +1,109 @@
-body{
-    background-color: #407087;
-    color: white;
-    font-family:Arial, Helvetica, sans-serif;
+@media screen and (min-width: 768px) {
+    .input{
+        width: 400px;
+    }
+    .box{
+        width: 400px;
+    }
+    .about{
+        width: 600px;
+        margin: 0 auto;
+    }
+  }
+main{
+    padding: 10px 20px;
 }
-input[type=text] {
+html{
+    background-color: rgb(124, 139, 139);
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+nav a {
+    color: white;
+    display: inline;
+    padding-left: 15px;
+    font-size: 0.8em;
+    text-decoration: none;
+}
+.inputField {
+    border-radius: 10px;
+}
+
+.clean{
+    border-radius: 10px 0 0 10px;
+}
+.clean, .inputField{
     width: 25%;
     padding: 12px 20px;
     margin: 8px 0;
     box-sizing: border-box;
 }
 .header{
-    font-size: 26px;
-    font-weight: 300;
+    font-size: 2rem;
+    background: #50898c;
+    color: white;
+    display: flex;
+    justify-content: left;
+    align-items:center;
+    padding: 0 10px;
+    flex-wrap: wrap;
+    
+  }
+.logo{
+    margin: 0 40px;
+    font-size: 2.4rem;
 }
-.a, .h3 {
-    color: #fff;
-    text-decoration: none;
-    font-size:20px;
+.habits{
+    margin: 15px; 
+  }
+
+.fresh{
+    color: rgb(225, 248, 196);
 }
 
-.p {
-    color: #949897;
-}
-.button{
-    background-color: #fff; /* Green */
-    border: none;
-    border-radius: 10px;
-    color: rgb(46, 44, 44);
-    padding: 10px 22px;
-    text-align: center;
+
+.a, .h3 {
+    color: rgb(245, 211, 125);
     text-decoration: none;
-    display: inline-block;
-    font-size: 12px; 
 }
-.footer{
- 
+
+.goals{
+    font-size: 1.6rem;
 }
+.goal{
+    font-size: 1.8rem;
+}
+.desc{
+    font-size: 1.2rem;
+    color: rgb(248, 232, 191);
+}
+.newHabit{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.ptime {
+    color: #b9bbba;
+}
+.newGoal{
+    color: white;
+    font-size: 12px;
+}
+.oneGoal, .allGoals{
+    margin: 25px 50px;
+}
+.allGoals{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.box{
+    background-color: rgb(175, 177, 177);
+    padding: 20px 20px;
+}
+

@@ -2,7 +2,6 @@ const { Goal, Habit } = require('../models/Goal')
 const mongoose = require('mongoose')
 module.exports = {
     show: (req, res) => {//show one Goal
-        // console.log(`id ${req.params.id}`)
         Goal.findById(req.params.id)
             .then(goal => {
                 res.render('goal/show', goal)

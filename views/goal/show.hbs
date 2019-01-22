@@ -1,24 +1,27 @@
-<h2>{{ title }} </h2>
+<div class="oneGoal">
+    <h3 class="goal">{{ title }} </h3>
+    <h4 class="desc">{{ description }}</h4>
 
-<h4> {{ description }} </h4>
-<p class="p"> Goal Date: {{ dateGoal }} </p>
-<form action="/goal/{{id}}?_method=delete" method=POST>
-    <input type="submit" value='Delete' class="button">
-</form>
-{{#if habits}}
-<ul>
-    {{!-- need to add link to show one goal to the title --}}
-    {{#each habits}}
+    <p class="ptime"> Goal Date: {{ dateGoal }} </p>
 
-    <p><span><input type="checkbox" name="complete"></span>{{ title }} </p>
+    {{#if habits}}
+    <ul class="habits">
+        {{!-- need to add link to show one goal to the title --}}
+        {{#each habits}}
 
-    {{/each}}
+        <p class="fresh"><span><input type="checkbox" name="complete"></span>{{ title }} </p>
 
-</ul>
-{{else}}
-<p>You have no habits yet. Add one below!</p>
-{{/if}}
-<form action="/goal/{{id}}?_method=put" method="POST">
-    <p><input type="text" name="habit" placeholder="Add new habit..."></p><input type="submit" class="button" value='Add it!'>
-</form><br><br>
-<a class="a" href='/'>Back to Goals List</a>
+        {{/each}}
+
+    </ul>
+    {{else}}
+    <p>You have no habits yet. Add one below!</p>
+    {{/if}}
+    <form action="/goal/{{id}}?_method=put" method="POST" class="newHabit">
+        <input class="input is-normal" type="text" name="habit" placeholder="add new habit..."><input type="submit"
+            class="button is-success" value='+'>
+    </form><br>
+    <form action="/goal/{{id}}?_method=delete" method=POST>
+        <input type="submit" value='delete this goal' class="button is-danger">
+    </form>
+</div>

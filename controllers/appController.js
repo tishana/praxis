@@ -11,6 +11,9 @@ module.exports = {
                     goals
                 })
             })
+    },
+    about: (req, res) => {//about page
+        res.render('goal/about')
     }
 
 

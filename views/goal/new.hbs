@@ -1,13 +1,13 @@
-<div>
-    <h3>Set a New Goal!</h3>
+<div class="oneGoal">
+    <h3 class="goals fresh">Set a New Goal!</h3>
     <form action="/goal" method="POST">
         <label>Title:</label><br>
-        <textarea name="title" cols='40' rows='2' placeholder="Goal Name"></textarea><br>
+        <textarea class="inputField" name="title" cols='40' rows='1' placeholder="Your new goal title..."></textarea><br>
         <label>Goal Date:</label><br>
-        <textarea name='dateGoal' cols='40' rows='2' placeholder="mm/dd/yyyy"></textarea><br>
+        <textarea class="inputField" name='dateGoal' cols='40' rows='1' placeholder="mm/dd/yyyy"></textarea><br>
         <label>Description:</label><br>
-        <textarea name='description' cols='40' rows='3' placeholder="Describe you new goal..."></textarea><br>
-        <input type="submit" value='Set it!'>
+        <textarea class="inputField" name='description' cols='40' rows='2' placeholder="Describe your new goal..."></textarea><br>
+        <input class="button is-dark" type="submit" value='Set it!'>
     </form>
 
 </div>
